@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quản lý tiến độ</title>
+    <style>
+        body {
+            font-family: 'Helvetica', sans-serif;
+            padding: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #87AA74;
+        }
+
+        .progress-container {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .report {
+            margin-top: 20px;
+            width: 300px;
+            text-align: center;
+        }
+
+        .stage {
+            margin-top: 20px;
+            width: 300px;
+            height: 20px;
+            background-color: #ddd;
+            position: relative;
+        }
+
+        .stage .progress {
+            height: 100%;
+            width: 50%;
+            background-color: #87AA74;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .stage p {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 100%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<h2>Tiến độ dự án</h2>
+
+<div class="progress-container">
+    <div class="report">
+        <h3>Báo cáo 1</h3>
+        <div class="stage">
+            <div class="progress" style="width: 25%;"></div>
+            <p>25%</p>
+        </div>
+    </div>
+    <div class="report">
+        <h3>Báo cáo 2</h3>
+        <div class="stage">
+            <div class="progress" style="width: 50%;"></div>
+            <p>50%</p>
+        </div>
+    </div>
+    <div class="report">
+        <h3>Báo cáo 3</h3>
+        <div class="stage">
+            <div class="progress" style="width: 75%;"></div>
+            <p>75%</p>
+        </div>
+    </div>
+    <div class="report">
+        <h3>Báo cáo 4</h3>
+        <div class="stage">
+            <div class="progress" style="width: 100%;"></div>
+            <p>100%</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
